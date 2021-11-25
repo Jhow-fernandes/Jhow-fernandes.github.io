@@ -1,0 +1,18 @@
+:root{
+  --cor-bg-primary: #FAFAFA;
+  --button-contact: #EB5757;
+  --button-contact-hover: #eb5757ee;
+  --dark-text: #333333;
+  --dark-text-hover: #333333b6;
+  --withe-color: #FFF; 
+}
+
+
+
+.dark:root {
+  --cor-bg-primary: #333333;
+  --button-contact: #EB5757;
+  --dark-text: #FFF;
+  --dark-text-hover:#fafafaa6;
+  --withe-color: #fff; 
+}

@@ -1,0 +1,222 @@
+/* RESETANDO OS PADRÕES DO HTML */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  transition: all 0.5s ease-in;
+  overflow: hidden; 
+  background: var(--cor-bg-primary);
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+
+}
+section {
+  margin-top: 10px;
+}
+.conteudo-center img{
+  margin-bottom: 2.0rem;
+}
+.conteudo-center h1 {
+  font-weight: 700;
+  font-size: 2.0rem;
+  color: var(--dark-text);
+  margin-bottom: 0.5rem;
+}
+.conteudo-center h2{
+  font-size: 2rem;
+  color: var(--dark-text);
+}
+.conteudo-center h2 span{
+  color: var(--button-contact);
+}
+.buttons {
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
+}
+/* BUTTON CONCATC */
+.buttons .contact{
+  text-decoration: none;
+  color: var(--withe-color);
+  background: var(--button-contact);
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  margin-right: 8rem;
+  transition: all 0.5s ease-in;
+}
+.buttons .contact:hover{
+  background: var(--button-contact-hover);
+}
+.buttons .contact i {
+  margin: 0.7rem;
+}
+
+/* BUTTON MY CV */
+.buttons .cv {
+  text-decoration: none;
+  border: 1px solid var(--dark-text);
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  color: var(--dark-text);
+  transition: all 0.5s ease-in;
+
+}
+.buttons .cv:hover {
+  color: var(--dark-text-hover);
+  border: 1px solid var(--dark-text-hover);
+}
+.buttons .cv i {
+  margin: 0.7rem;
+}
+/**********************************************/
+.conteudo-lef{
+ margin-top: -750px;
+ padding: 10px;
+}
+.dark-mode a i {
+  transition: background 0.5s linear;
+}
+.dark-mode{
+  margin-bottom: 300px;
+}
+.dark-mode a {
+ color: var(--dark-text);
+ font-size: 20px;
+ transition: all 0.5s ease-in;
+}
+.dark-mode a:hover{
+ color: var(--dark-text-hover);
+}
+.social-icons-link{
+  margin-bottom: 1px;
+}
+.social-icons-link a{
+  color: var(--dark-text);
+  font-size: 22px;
+  transition: all 0.5s ease-in;
+}
+.social-icons-link a:hover{
+  color: var(--dark-text-hover);
+}
+
+.social-icons-git a{
+  color: var(--dark-text);
+  font-size: 23px;
+ transition: all 0.5s ease-in;
+}
+.social-icons-git a:hover{
+  color: var(--dark-text-hover);
+ 
+ }
+
+@media (max-width: 1400px) {
+ .conteudo-center img{
+   height: 300px;
+  }
+  .conteudo-lef {
+    margin-top: -590px;
+  }
+}
+
+@media (max-width: 480px) {
+  .conteudo-center img{
+    height: 15rem;
+  }
+  .conteudo-lef {
+    margin-top: -475px;
+  }
+  .conteudo-center h2 {
+    font-size: 1.5rem;
+  }
+  .buttons {
+    margin-top:1.0rem;
+  }
+  .buttons .contact {
+    font-size: 0.9rem;
+    margin-right: 2.5rem;
+  }
+  .buttons .contact i {
+    margin: 0.2rem;
+  }
+  .buttons .cv {
+    font-size: 0.9rem;
+  }
+  .buttons .contact i {
+    margin: 0.2rem;
+  }
+
+}
+
+ 
+/* ini: Preloader */
+ 
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:var(--cor-bg-primary); /* cor do background que vai ocupar o body */
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.bolas > div {
+  display: inline-block;
+  background-color: var(--dark-text);
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 3px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: animarBola;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+   
+}
+.bolas > div:nth-child(1) {
+    animation-duration:0.75s ;
+    animation-delay: 0;
+}
+.bolas > div:nth-child(2) {
+    animation-duration: 0.75s ;
+    animation-delay: 0.12s;
+}
+.bolas > div:nth-child(3) {
+    animation-duration: 0.75s  ;
+    animation-delay: 0.24s;
+}
+ 
+@keyframes animarBola {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  16% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0.7;
+  }
+  33% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; 
+  } 
+}
+/* end: Preloader */
