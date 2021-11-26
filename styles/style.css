@@ -82,6 +82,7 @@ section {
 .conteudo-lef{
  margin-top: -750px;
  padding: 10px;
+ color: var(--dark-text);
 }
 .dark-mode a i {
   transition: background 0.5s linear;
@@ -117,7 +118,28 @@ section {
 .social-icons-git a:hover{
   color: var(--dark-text-hover);
  
- }
+}
+
+.social-icons-contato a{
+  color: var(--dark-text);
+  font-size: 18px;
+ transition: all 0.5s ease-in;
+}
+.social-icons-contato a:hover{
+  color: var(--dark-text-hover);
+ 
+}
+
+.social-icons-email a{
+  color: var(--dark-text);
+  font-size: 20px;
+ transition: all 0.5s ease-in;
+}
+.social-icons-email a:hover{
+  color: var(--dark-text-hover);
+ 
+}
+ 
 
 @media (max-width: 1400px) {
  .conteudo-center img{
